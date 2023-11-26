@@ -12,7 +12,7 @@ plugins:
 # Theme settings
 
 description: >
-  my portfolio
+  my jekyll portfolio description
 
 # To enable Google Analytics, add your tracking ID here.
 # google_analytics: UA-NNNNNNNN-N
@@ -20,6 +20,14 @@ description: >
 # Add pages to the navigation in this order.
 header_pages:
   - about.md
+
+theme_color: light # possible values: light dark
+reduce_motion: true # possible values: true false
+
+# Social media links
+social_links:
+ - { platform: github,         user_url: "https://github.com/ian-pvd/deep-forest" }
+
 
 # Build settings
 

@@ -1,0 +1,31 @@
+<footer class="site-footer" id="site-footer">
+	<div class="site-footer__columns">
+		<div class="site-footer__col">
+			<h2> About</h2>
+			<p>{{ site.description | escape }}</p>
+		</div>
+		<div class="site-footer__col">
+			<h2> Contact</h2>
+		</div>
+		{%- if titles_size > 0 -%}
+		<div class="site-footer__col">
+			<nav class="site-footer__nav site-footer__col" id="site-footer-nav">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+		{%- endif -%}
+	</div>
+
+	<div class="site-footer__bottom">
+		<nav class="site-footer__social-links" id="site-footer-social-link">
+			{%- include social-links.html -%}
+		</nav>
+		<p class="site-footer__copyright">&copy; {{ site.title | escape }} {{ site.time | date: '%Y' }}</p>
+	</div>
+
+</footer>

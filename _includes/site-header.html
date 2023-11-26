@@ -1,0 +1,23 @@
+<header class="site-header" id="site-header">
+
+	{%- assign default_paths = site.pages | map: "path" -%}
+	{%- assign page_paths = site.header_pages | default: default_paths -%}
+	{%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
+	<img src="site-logo.png" class="site-header__logo" alt="Logo" />
+	<a class="site-header__title" rel="author" href="{{ "/" | relative_url }}">
+		{{ site.title | escape }}
+	</a>
+	{%- if titles_size > 0 -%}
+	<nav class="site-header__nav" id="site-header-nav">
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Services</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+	</nav>
+	<div class="site-header__menu-toggle" id="site-header-menu-toggle" role="button" aria-controls="site-header__nav" aria-expanded="false">
+		&#9776;
+	</div>
+	{%- endif -%}
+</header>

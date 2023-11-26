@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: " en" }}">
+<html lang="{{ page.lang | default: site.lang | default: " en" }}" data-reduce-motion="{{ site.reduce_motion | default: false | jsonify }}" data-theme-color="{{ site.theme_color | default: 'dark' }}">
 
 <link rel="stylesheet" href="{{ " /assets/css/style.css" }}">
 
@@ -7,11 +7,17 @@
 
 <body>
 
-	<main class="page-content" aria-label="Content">
-		<div class="wrapper">
-			{{ content }}
-		</div>
-	</main>
+	<div class="site" id="site">
+
+		{%- include site-header.html -%}
+
+		{%- include site-main.html -%}
+
+		{%- include site-footer.html -%}
+
+	</div>
+
+	<script src="{{ site.baseurl }}/assets/js/script.js" defer></script>
 
 </body>
 
