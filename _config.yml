@@ -1,0 +1,29 @@
+title: deep-forest
+repo: https://github.com/ian-pvd/deep-forest
+author:
+  name: ian-pvd
+  email: pvdindustrial@gmail.com
+
+# Jekyll plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Theme settings
+
+description: >
+  my portfolio
+
+# To enable Google Analytics, add your tracking ID here.
+# google_analytics: UA-NNNNNNNN-N
+
+# Add pages to the navigation in this order.
+header_pages:
+  - about.md
+
+# Build settings
+
+# SCSS config
+sass:
+  sass_dir: _sass
+  style: nested # possible values: nested expanded compact compressed

@@ -1,0 +1,15 @@
+:root {
+  --color-heavy-metal: #121412;
+  --color-bon-jour: hsl(300, 5%, 90%);
+
+  --c-background: var(--color-heavy-metal);
+  --c-text: var(--color-bon-jour);
+}
+
+body {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--c-text);
+  font-family: sans-serif;
+  background-color: var(--c-background);
+}
