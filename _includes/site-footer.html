@@ -1,20 +1,29 @@
 <footer class="site-footer" id="site-footer">
+
+	{%- assign default_utilities = site.pages | map: "path" -%}
+	{%- assign utilities_nav = site.utilities_nav | default: default_utilities -%}
+	{%- assign utilities_nav_size = site.pages | map: 'title' | join: '' | size -%}
+
 	<div class="site-footer__columns">
+
 		<div class="site-footer__col">
 			<h2> About</h2>
 			<p>{{ site.description | escape }}</p>
 		</div>
 		<div class="site-footer__col">
-			<h2> Contact</h2>
+			<h2>Contact</h2>
 		</div>
-		{%- if titles_size > 0 -%}
+
+		{%- if utilities_nav_size > 0 -%}
 		<div class="site-footer__col">
 			<nav class="site-footer__nav site-footer__col" id="site-footer-nav">
 				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Services</a></li>
-					<li><a href="#">Contact</a></li>
+					{%- for path in utilities_nav -%}
+						{%- assign utilities_item = site.pages | where: "path", path | first -%}
+						{%- if utilities_item.title -%}
+						<li><a href="{{ utilities_item.url | relative_url }}">{{ utilities_item.title | escape }}</a>
+						{%- endif -%}
+					{%- endfor -%}
 				</ul>
 			</nav>
 		</div>
@@ -27,5 +36,4 @@
 		</nav>
 		<p class="site-footer__copyright">&copy; {{ site.title | escape }} {{ site.time | date: '%Y' }}</p>
 	</div>
-
 </footer>

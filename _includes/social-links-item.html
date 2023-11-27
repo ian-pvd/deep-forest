@@ -1,8 +1,6 @@
 <li class="social-links-item">
-	{% assign entry = include.item %}
-	<a {% unless entry.platform == 'rss' %}rel="me" {% endunless %}href="{{ entry.user_url }}" target="_blank" title="{{ entry.title | default: entry.platform }}">
-	  <svg class="svg-icon grey">
-		<use xlink:href="{{ '/assets/social-icons.svg#' | append: entry.platform | relative_url }}"></use>
-	  </svg>
+	{% assign social_link = include.social_link %}
+	<a href="{{ social_link.user_url }}" title="{{ social_link.link_title | default: social_link.platform }}" target="_blank" rel="noopener nofollow">
+		{%- social_link social-icons/{{ social_link.platform }}.svg -%}
 	</a>
-  </li>
+</li>
