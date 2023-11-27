@@ -27,7 +27,8 @@ a {
 	color: var(--c-link);
 	text-decoration: none;
 	transition-property: color;
-	transition: none 0.3s ease-in-out;
+	transition-duration: 0.125s;
+	transition-timing-function: ease-in-out;
 
 	&:focus,
 	&:hover {
