@@ -1,0 +1,20 @@
+@mixin button {
+	background-color: var(--c-link);
+	color: var(--c-background);
+	display: inline-block;
+	padding: 0.5rem 1.5rem;
+	cursor: pointer;
+
+	&:focus,
+	&:hover {
+		background-color: var(--c-link-hover);
+		color: var(--c-background);
+		text-decoration: none;
+	}
+}
+
+@mixin wrapper {
+	margin: 0 auto;
+	padding: clamp(1.5rem, 5vw, 2rem);
+	width: clamp(20rem, 100%, 36em);
+}

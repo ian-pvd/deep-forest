@@ -7,6 +7,7 @@
 	--color-tom-thumb: hsl(120, 25%, 25%); // #305030
 
 	--c-background: var(--color-heavy-metal);
+	--c-site-header: var(--color-heavy-metal);
 	--c-text: var(--color-bon-jour);
 	--c-link: var(--color-laurel);
 	--c-link-hover: var(--color-apple);
@@ -15,6 +16,7 @@
 	/* TODO */
 	--size-offset: 0.1em; // define offset using ~2px for 20px font size.
 	--border-underline: 3px;
+	--size-site-header: 72px;
 }
 
 /* Theme Colorway Variables */

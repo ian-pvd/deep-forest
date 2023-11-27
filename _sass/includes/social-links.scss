@@ -1,0 +1,23 @@
+.social-links {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
+	margin: 0;
+	padding: 0 2rem;
+}
+
+.social-links-item {
+	margin-right: 0.75rem;
+	list-style: 1;
+
+	&:last-child {
+		margin-right: 0;
+	}
+}
+
+.social-links svg {
+	width: 1.5rem;
+	height: 1.5rem;
+}
