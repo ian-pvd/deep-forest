@@ -7,11 +7,21 @@
 	<div class="site-footer__columns">
 
 		<div class="site-footer__col">
-			<h2> About</h2>
+			<h2>About</h2>
 			<p>{{ site.description | escape }}</p>
 		</div>
 		<div class="site-footer__col">
 			<h2>Contact</h2>
+			{%- if site.author %}
+			<ul class="site-footer__contact-list">
+				{% if site.author.name -%}
+				<li class="site-footer__author-name">{{ site.author.name | escape }}</li>
+				{% endif -%}
+				{% if site.author.email -%}
+				<li><a class="site-footer__author_email" href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>
+				{%- endif %}
+			</ul>
+			{%- endif %}
 		</div>
 
 		{%- if utilities_nav_size > 0 -%}

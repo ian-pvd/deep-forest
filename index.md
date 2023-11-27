@@ -1,6 +1,6 @@
 ---
 title: ian.pvd, front-end developer
-layout: default
+layout: home
 ---
 
-Hello World.
+Welcome to my homepage. Consectetur mollit duis, exercitation. Est, exercitation pariatur cillum exercitation reprehenderit nisi occaecat. Cillum exercitation veniam pariatur exercitation.

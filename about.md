@@ -1,7 +1,7 @@
 ---
-layout: default
-title: about
+layout: page
+title: About
 permalink: /about/
 ---
 
-About
+About markdown. Amet sit non deserunt anim, labore proident. Deserunt anim labore proident consectetur nisi culpa proident.

@@ -1,7 +1,18 @@
 ---
-layout: default
-title: resume
+layout: page
+title: Resume
 permalink: /resume/
 ---
 
-Resume
+## Experience
+
+Jobs you worked.
+
+## Skills
+
+Skills you have.
+
+## Extra
+
+Catskills 3500<br>
+Nightlife producer: 2005 - 2018
