@@ -118,7 +118,7 @@
 	padding: 0;
 
 	@media #{$desktop} {
-		display: none; // TODO
+		display: flex;
 	}
 }
 
