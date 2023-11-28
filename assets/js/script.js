@@ -35,9 +35,9 @@ const toggleNavMenu = () => {
 	// TODO: Toggle doesn't close now.
 	menuToggle.addEventListener("click", function () {
 		const expanded =
-			menuToggle.getAttribute("aria-expanded") === "true" || "false";
+			menuToggle.getAttribute("aria-expanded") === "true" || false;
 		menuToggle.setAttribute("aria-expanded", !expanded);
-		menu.setAttribute("aria-hidden", expanded);
+		menu.setAttribute("aria-hidden", String(expanded));
 	});
 };
 
@@ -64,9 +64,9 @@ const toggleSocialMenu = () => {
 	// Show & hide the mobile menu on click.
 	menuToggle.addEventListener("click", function () {
 		const expanded =
-			menuToggle.getAttribute("aria-expanded") === "true" || "false";
+			menuToggle.getAttribute("aria-expanded") === "true" || false;
 		menuToggle.setAttribute("aria-expanded", !expanded);
-		menu.setAttribute("aria-hidden", expanded);
+		menu.setAttribute("aria-hidden", String(expanded));
 	});
 };
 

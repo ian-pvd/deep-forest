@@ -9,6 +9,10 @@
 	position: relative;
 	z-index: 10;
 
+	@media #{$desktop} {
+		align-items: unset;
+	}
+
 	&::after {
 		background-color: var(--c-site-header);
 		bottom: 0;
@@ -76,11 +80,13 @@
 	@media #{$desktop} {
 		background-color: transparent;
 		flex-direction: row;
-		height: auto;
+		height: 72px; // TODO var
+		left: auto;
 		margin: 0 0 0 auto;
 		overflow: unset;
 		padding: 0;
 		position: relative;
+		top: auto;
 		transform: unset;
 		transition: unset;
 		width: auto;
@@ -131,6 +137,12 @@
 	border-top: var(--border-hr);
 	margin-top: 0.75rem;
 	padding-top: 1.5rem;
+
+	@media #{$desktop} {
+		border-top: none;
+		margin-top: 0;
+		padding-top: 0;
+	}
 }
 
 .site-header__nav-toggle {

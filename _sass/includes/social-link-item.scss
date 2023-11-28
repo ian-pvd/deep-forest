@@ -4,6 +4,10 @@
 	&:first-child {
 		margin-right: 0;
 	}
+
+	@media #{$desktop} {
+		margin: 0 0 0.75rem 0;
+	}
 }
 
 .social-link-item__link {
