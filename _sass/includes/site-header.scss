@@ -35,7 +35,7 @@
 
 	@media #{$desktop} {
 		margin: 0 auto;
-		max-width: 57rem;
+		max-width: calc(54rem + 3rem); // 54rem + 3rem (half site header padding)
 	}
 }
 
@@ -55,7 +55,7 @@
 
 	@media #{$desktop} {
 		margin: auto 0;
-		width: 3rem;
+		width: var(--size-logo-desktop);
 	}
 }
 
@@ -135,7 +135,7 @@
 
 .site-header__nav-item {
 	border-bottom: var(--border-hr);
-	font-size: 24px;
+	font-size: var(--fs-large);
 	line-height: 1;
 	margin-bottom: 0.75rem;
 	padding-bottom: 0.75rem;
@@ -148,7 +148,7 @@
 
 	@media #{$desktop} {
 		border-bottom: none;
-		font-size: 20px;
+		font-size: var(--fs-medium);
 		margin: 0 0 0 1rem;
 		padding: 0;
 	}
@@ -198,7 +198,7 @@
 	color: var(--c-text);
 	cursor: pointer;
 	display: flex;
-	font-size: 1.5rem;
+	font-size: var(--fs-large);
 	height: 2.5rem;
 	justify-content: center;
 	line-height: 1;

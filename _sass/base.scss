@@ -12,7 +12,7 @@ body {
 	background-color: var(--c-background);
 	color: var(--c-text);
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 20px;
+	font-size: var(--fs-medium);
 	font-weight: 600;
 	line-height: calc(4 / 3);
 	letter-spacing: 0.02em;
