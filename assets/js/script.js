@@ -16,12 +16,6 @@ const toggleNavMenu = () => {
 	const menuToggle = document.getElementById("site-header-nav-toggle");
 	const menu = document.getElementById("site-header-nav");
 
-	// DEV
-	// menuToggle.setAttribute("aria-expanded", "true");
-	// menu.setAttribute("aria-hidden", "false");
-	// document.body.setAttribute("data-nav-hidden", "false");
-	// return;
-
 	// Show & hide the menu aria values based on viewport width.
 	const toggleViewportAria = () => {
 		if (!isMobile()) {
