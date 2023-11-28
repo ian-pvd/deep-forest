@@ -6,7 +6,11 @@
 	}
 
 	@media #{$desktop} {
-		margin: 0 0 0.75rem 0;
+		margin: 0 1.5rem 1.5rem;
+
+		&:first-child {
+			margin-right: 1.5rem;
+		}
 	}
 }
 

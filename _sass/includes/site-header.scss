@@ -41,10 +41,18 @@
 .site-header__logo {
 	width: clamp(2rem, 5vw, 4rem);
 	aspect-ratio: 1;
+
+	@media #{$desktop} {
+		margin: auto 0;
+	}
 }
 
 .site-header__title {
 	font-size: clamp(1.5rem, 4vw, 2rem);
+
+	@media #{$desktop} {
+		display: flex;
+	}
 }
 
 .site-header__title-link {
@@ -55,6 +63,10 @@
 	&:hover {
 		color: var(--c-link-hover);
 		text-decoration: none;
+	}
+
+	@media #{$desktop} {
+		margin: auto 0;
 	}
 }
 
@@ -78,9 +90,11 @@
 	}
 
 	@media #{$desktop} {
+
+		align-items: flex-start;
 		background-color: transparent;
 		flex-direction: row;
-		height: 72px; // TODO var
+		height: clamp(2rem, 5vw, 4rem);
 		left: auto;
 		margin: 0 0 0 auto;
 		overflow: unset;
@@ -89,7 +103,7 @@
 		top: auto;
 		transform: unset;
 		transition: unset;
-		width: auto;
+		width: calc(clamp(2rem, 5vw, 4rem));
 		z-index: 1;
 
 		&[aria-hidden="false"] {
@@ -102,6 +116,10 @@
 	list-style: none;
 	margin: 0;
 	padding: 0;
+
+	@media #{$desktop} {
+		display: none; // TODO
+	}
 }
 
 .site-header__nav-item {
@@ -140,8 +158,12 @@
 
 	@media #{$desktop} {
 		border-top: none;
-		margin-top: 0;
-		padding-top: 0;
+		left: 50%;
+		margin: 0 0 0 auto;
+		padding: 0;
+		position: absolute;
+		top: 0;
+		transform: translate(-50%, 0);
 	}
 }
 
