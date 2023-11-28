@@ -11,15 +11,24 @@
 	display: none;
 
 	@media #{$desktop} {
-		background-color: var(--c-site-header);
 		border: none;
 		cursor: pointer;
 		display: block;
 		margin: 0 auto;
 		overflow: hidden;
 		padding: 0;
-		position: relative;
-		z-index: 1;
+
+		&::after {
+			background-color: var(--c-site-header);
+			content: "";
+			display: block;
+			height: 48px;
+			left: 0;
+			position: absolute;
+			top: 0;
+			width: 100%;
+			z-index: 1;
+		}
 	}
 }
 
@@ -29,7 +38,7 @@
 	object-fit: cover;
 	width: 100%;
 	position: relative;
-	z-index: 1;
+	z-index: 10;
 
 	@media #{$desktop} {
 		border-radius: 50%;
