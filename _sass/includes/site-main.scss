@@ -1,7 +1,7 @@
 .site-main {
 	display: block;
+	font-size: clamp(var(--fs-medium), 2vw, var(--fs-large));
 	font-weight: 400;
-	font-size: clamp(20px, 2vw, 24px);
 	line-height: calc(4 / 3);
 }
 

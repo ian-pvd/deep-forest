@@ -14,11 +14,19 @@
 	--c-link-hover: var(--color-apple);
 	--c-highlight: var(--color-tom-thumb);
 
+	/* Font Sizes */
+	--fs-small: 0.75rem; // 12px
+	--fs-small: 1rem; // 16px
+	--fs-medium: 1.25rem; // 20px
+	--fs-large: 1.5rem; // 24px
+	--fs-xlarge: 2rem; // 32px
+
 	/* TODO */
-	--underline-thickness: 2px;
 	--border-hr: 2px solid currentColor;
+	--size-logo-desktop: 3rem; // 48px
 	--size-offset: 0.1em; // define offset using ~2px for 20px font size.
-	--size-site-header: 80px;
+	--size-site-header: 5rem; // 80px
+	--underline-thickness: 2px;
 }
 
 /* Theme Colorway Variables */

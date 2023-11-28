@@ -26,23 +26,26 @@ primary_nav:
 # Add pages to the site-footer utilities navigation in this order.
 utilities_nav:
   - about.md
+  - portfolio.md
+  - resume.md
   - contact.md
 
 theme_color: dark-green # possible values: dark-green light-green dark-red light-red, default: dark-green
 reduce_motion: false # possible values: true false, default: false
 show_excerpts: false # possible values: true false, default: false
+logo_url: '/assets/logo.svg' # logo url, default: /assets/logo.png
 
 # Social media links
 social_links:
- - { platform: dribbble,      user_url: "https://dribbble.com/jekyll" }
- - { platform: facebook,      user_url: "https://www.facebook.com/jekyll" }
- - { platform: flickr,        user_url: "https://www.flickr.com/photos/jekyll" }
+#  - { platform: dribbble,      user_url: "https://dribbble.com/jekyll" }
+#  - { platform: facebook,      user_url: "https://www.facebook.com/jekyll" }
+#  - { platform: flickr,        user_url: "https://www.flickr.com/photos/jekyll" }
  - { platform: github,        user_url: "https://github.com/jekyll/minima" }
- - { platform: instagram,     user_url: "https://www.instagram.com/jekyll" }
+#  - { platform: instagram,     user_url: "https://www.instagram.com/jekyll" }
  - { platform: linkedin,      user_url: "https://www.linkedin.com/in/jekyll" }
  - { platform: stackoverflow, user_url: "https://stackoverflow.com/users/1234567/jekyll" }
  - { platform: twitter,       user_url: "https://twitter.com/jekyllrb" }
- - { platform: youtube,       user_url: "https://www.youtube.com/jekyll" }
+#  - { platform: youtube,       user_url: "https://www.youtube.com/jekyll" }
 
 # Build settings
 

@@ -11,30 +11,39 @@
 	display: none;
 
 	@media #{$desktop} {
-		background-color: var(--c-site-header);
 		border: none;
 		cursor: pointer;
 		display: block;
 		margin: 0 auto;
 		overflow: hidden;
 		padding: 0;
-		position: relative;
-		z-index: 1;
+
+		&::after {
+			background-color: var(--c-site-header);
+			content: "";
+			display: block;
+			height: 48px;
+			left: 0;
+			position: absolute;
+			top: 0;
+			width: 100%;
+			z-index: 1;
+		}
 	}
 }
 
 .social-links__avatar {
-	display: block;
-	height: 100%;
-	object-fit: cover;
-	width: 100%;
-	position: relative;
-	z-index: 1;
+	display: none;
 
 	@media #{$desktop} {
 		border-radius: 50%;
-		width: clamp(2rem, 5vw, 3rem);
-		height: clamp(2rem, 5vw, 3rem);
+		display: block;
+		height: 100%;
+		height: var(--size-logo-desktop);
+		object-fit: cover;
+		position: relative;
+		width: var(--size-logo-desktop);
+		z-index: 10;
 	}
 }
 
