@@ -1,5 +1,9 @@
 .social-links {
 	position: relative;
+
+	@media #{$desktop} {
+		overflow: hidden;
+	}
 }
 
 .social-links__toggle {
@@ -23,6 +27,8 @@
 	height: 100%;
 	object-fit: cover;
 	width: 100%;
+	position: relative;
+	z-index: 1;
 }
 
 .social-links__menu {
@@ -36,5 +42,14 @@
 
 	@media #{$desktop} {
 		flex-flow: column nowrap;
+		transition-property: transform;
+		transition-timing-function: ease-in-out;
+		transition-duration: 0.25s;
+		transform: translate(0, -100%);
+		z-index: 0;
+
+		&[aria-hidden="false"] {
+			transform: translate(0, 0);
+		}
 	}
 }
