@@ -94,7 +94,8 @@
 		align-items: flex-start;
 		background-color: transparent;
 		flex-direction: row;
-		height: clamp(2rem, 5vw, 4rem);
+		height: clamp(2rem, 5vw, 3rem);
+		width: auto;
 		left: auto;
 		margin: 0 0 0 auto;
 		overflow: unset;
@@ -103,7 +104,6 @@
 		top: auto;
 		transform: unset;
 		transition: unset;
-		width: calc(clamp(2rem, 5vw, 4rem));
 		z-index: 1;
 
 		&[aria-hidden="false"] {
@@ -158,12 +158,8 @@
 
 	@media #{$desktop} {
 		border-top: none;
-		left: 50%;
-		margin: 0 0 0 auto;
+		margin: 0 -12px;
 		padding: 0;
-		position: absolute;
-		top: 0;
-		transform: translate(-50%, 0);
 	}
 }
 
@@ -182,6 +178,6 @@
 	width: 2.5rem;
 
 	@media #{$desktop} {
-		display: none; /* Initially hide on desktop */
+		display: none;
 	}
 }

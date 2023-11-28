@@ -21,9 +21,11 @@ const toggleNavMenu = () => {
 		if (!isMobile()) {
 			menuToggle.setAttribute("aria-expanded", "true");
 			menu.setAttribute("aria-hidden", "false");
+			document.body.setAttribute("data-nav-hidden", "false");
 		} else {
 			menuToggle.setAttribute("aria-expanded", "false");
 			menu.setAttribute("aria-hidden", "true");
+			document.body.setAttribute("data-nav-hidden", "true");
 		}
 	};
 	// Set initial states for desktop.
@@ -38,6 +40,7 @@ const toggleNavMenu = () => {
 			menuToggle.getAttribute("aria-expanded") === "true" || false;
 		menuToggle.setAttribute("aria-expanded", !expanded);
 		menu.setAttribute("aria-hidden", String(expanded));
+		document.body.setAttribute("data-nav-hidden", String(expanded));
 	});
 };
 
