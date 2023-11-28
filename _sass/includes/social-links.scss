@@ -1,4 +1,29 @@
 .social-links {
+	position: relative;
+}
+
+.social-links__toggle {
+	display: none;
+
+	@media #{$desktop} {
+		aspect-ratio: 1;
+		border-radius: 50%;
+		display: block;
+		overflow: hidden;
+		position: relative;
+		width: clamp(2rem, 5vw, 4rem);
+		border: none;
+	}
+}
+
+.social-links__avatar {
+	display: block;
+	height: 100%;
+	object-fit: cover;
+	width: 100%;
+}
+
+.social-links__menu {
 	align-items: center;
 	display: flex;
 	flex-flow: row wrap;

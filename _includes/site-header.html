@@ -15,7 +15,7 @@
 	</span>
 
 	{%- if primary_nav_size > 0 -%}
-	<nav class="site-header__nav" id="site-header-nav">
+	<nav class="site-header__nav" id="site-header-nav" aria-hidden="true">
 		<ul class="site-header__nav-list">
 			{%- for path in primary_nav -%}
 				{%- assign nav_item = site.pages | where: "path", path | first -%}
@@ -26,12 +26,12 @@
 				{%- endif -%}
 			{%- endfor -%}
 		</ul>
-		<div class="site-header__social-links">
+		<div class="site-header__social-links" id="site-header-social-links">
 			{%- include social-links.html -%}
 		</div>
 	</nav>
-	<div class="site-header__menu-toggle" id="site-header-menu-toggle" role="button" aria-controls="site-header__nav" aria-expanded="false">
+	<button class="site-header__nav-toggle" id="site-header-nav-toggle" aria-controls="site-header-nav" aria-expanded="false">
 		&#9776;
-	</div>
+	</button>
 	{%- endif -%}
 </header>
