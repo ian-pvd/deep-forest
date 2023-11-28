@@ -18,8 +18,15 @@ body {
 	letter-spacing: 0.02em;
 	margin: 0;
 
-	&[data-menu-hidden="false"] {
+	&[data-nav-hidden="false"] {
 		position: fixed;
+	}
+
+	@media #{$desktop} {
+
+		&[data-nav-hidden="false"] {
+			position: unset;
+		}
 	}
 }
 

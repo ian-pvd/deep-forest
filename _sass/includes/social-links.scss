@@ -33,8 +33,8 @@
 
 	@media #{$desktop} {
 		border-radius: 50%;
-		width: clamp(2rem, 5vw, 4rem);
-		height: clamp(2rem, 5vw, 4rem);
+		width: clamp(2rem, 5vw, 3rem);
+		height: clamp(2rem, 5vw, 3rem);
 	}
 }
 
