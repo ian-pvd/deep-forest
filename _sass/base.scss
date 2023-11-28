@@ -33,7 +33,7 @@ a {
 	&:focus,
 	&:hover {
 		color: var(--c-link-hover);
-		text-decoration-thickness: var(--border-underline);
+		text-decoration-thickness: var(--underline-thickness);
 		text-decoration-line: underline;
 		text-underline-offset: var(--size-offset);
 	}
@@ -52,4 +52,11 @@ h6 {
 p {
 	line-height: calc(5 / 3);
 	margin: 0 0 1rem;
+}
+
+svg {
+	display: inline-block;
+	min-height: 1rem;
+	min-width: 1rem;
+	vertical-align: text-bottom;
 }
