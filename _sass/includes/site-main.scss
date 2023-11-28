@@ -1,0 +1,10 @@
+.site-main {
+	display: block;
+	font-weight: 400;
+	font-size: clamp(20px, 2vw, 24px);
+	line-height: calc(4 / 3);
+}
+
+.site-main__wrapper {
+	@include wrapper;
+}

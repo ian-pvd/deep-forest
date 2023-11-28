@@ -1,20 +1,24 @@
 /* Default Theme Variables */
 :root {
 	--color-heavy-metal: hsl(120, 6%, 7.5%); // #121412
+	--color-log-cabin: hsl(120, 3%, 4%); // #0a0b0a
 	--color-bon-jour: hsl(300, 6%, 90%); // #e7e4e7
 	--color-apple: hsl(120, 50%, 55%); // #53c653
 	--color-laurel: hsl(120, 15%, 50%); // #6c936c
 	--color-tom-thumb: hsl(120, 25%, 25%); // #305030
 
 	--c-background: var(--color-heavy-metal);
+	--c-site-header: var(--color-log-cabin);
 	--c-text: var(--color-bon-jour);
 	--c-link: var(--color-laurel);
 	--c-link-hover: var(--color-apple);
 	--c-highlight: var(--color-tom-thumb);
 
 	/* TODO */
+	--underline-thickness: 2px;
+	--border-hr: 2px solid currentColor;
 	--size-offset: 0.1em; // define offset using ~2px for 20px font size.
-	--border-underline: 3px;
+	--size-site-header: 80px;
 }
 
 /* Theme Colorway Variables */
