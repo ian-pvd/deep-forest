@@ -10,7 +10,7 @@
 	}
 
 	@at-root .site-footer & {
-		// Footer style overrides.
+		margin-bottom: 3rem;
 	}
 }
 
@@ -84,5 +84,9 @@
 				transform: translate(0, 0);
 			}
 		}
+	}
+
+	@at-root .site-footer & {
+		justify-content: center;
 	}
 }
