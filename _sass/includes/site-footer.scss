@@ -1,0 +1,25 @@
+.site-footer {
+	background-color: var(--c-site-header);
+	color: var(--c-text);
+	display: flex;
+	padding: 1rem 1.5rem;
+	position: relative;
+	justify-content: center;
+}
+
+.site-footer__wrapper {
+	align-items: center;
+	// display: flex;
+	justify-content: flex-start;
+	width: 100%;
+
+	@media #{$desktop} {
+		margin: 0 auto;
+		display: block;
+		max-width: calc(54rem + 3rem); // 54rem + 3rem (half site footer padding)
+	}
+}
+
+.site-footer__columns {
+	// display: flex;
+}

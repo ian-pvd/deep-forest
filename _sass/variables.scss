@@ -3,6 +3,7 @@
 	--color-heavy-metal: hsl(120, 6%, 7.5%); // #121412
 	--color-log-cabin: hsl(120, 3%, 4%); // #0a0b0a
 	--color-bon-jour: hsl(300, 6%, 90%); // #e7e4e7
+	--color-tundora: hsl(300, 3%, 25%); // #423e42
 	--color-apple: hsl(120, 50%, 55%); // #53c653
 	--color-laurel: hsl(120, 15%, 50%); // #6c936c
 	--color-tom-thumb: hsl(120, 25%, 25%); // #305030
@@ -23,9 +24,11 @@
 
 	/* TODO */
 	--border-hr: 2px solid currentColor;
+	--border-ui: 1px solid var(--color-bon-jour);
+	--border-layout: 2px solid var(--color-tundora);
 	--size-logo-desktop: 3rem; // 48px
 	--size-offset: 0.1em; // define offset using ~2px for 20px font size.
-	--size-site-header: 5rem; // 80px
+	--size-site-header: calc(5rem + 2px); // 80px + border.
 	--underline-thickness: 2px;
 }
 
