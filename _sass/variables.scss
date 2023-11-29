@@ -3,6 +3,7 @@
 	--color-heavy-metal: hsl(120, 6%, 7.5%); // #121412
 	--color-log-cabin: hsl(120, 3%, 4%); // #0a0b0a
 	--color-bon-jour: hsl(300, 6%, 90%); // #e7e4e7
+	--color-venus: hsl(300, 5.9%, 60%); // #9f939f
 	--color-tundora: hsl(300, 3%, 25%); // #423e42
 	--color-apple: hsl(120, 50%, 55%); // #53c653
 	--color-laurel: hsl(120, 15%, 50%); // #6c936c
@@ -16,21 +17,31 @@
 	--c-highlight: var(--color-tom-thumb);
 
 	/* Font Sizes */
-	--fs-xsmall: 0.875rem; // 14px
-	--fs-small: 1rem; // 16px
+	--fs-xxsmall: 0.875rem; // 14px
+	--fs-xsmall: 1rem; // 16px
+	--fs-small: 1.125rem; // 18px
 	--fs-medium: 1.25rem; // 20px
 	--fs-large: 1.5rem; // 24px
 	--fs-xlarge: 2rem; // 32px
 
+	/* Spacing Values */
+	--space-xxsmall: 0.25rem;
+	--space-xsmall: 0.5rem;
+	--space-small: 0.75rem;
+	--space-medium: 1.5rem;
+	--space-large: 3rem;
+	--space-xlarge: 6rem;
+
 	/* TODO */
 	--border-hr: 2px solid currentColor;
-	--border-ui: 1px solid var(--color-bon-jour);
 	--border-layout: 2px solid var(--color-tundora);
+	--border-ui: 1px solid var(--color-venus);
+	--mw-site-layout: calc(54rem + var(--space-large)); // 54rem + 3rem (half site footer padding)
 	--size-logo-desktop: 3rem; // 48px
 	--size-offset: 0.1em; // define offset using ~2px for 20px font size.
-	--size-site-header: calc(5rem + 2px); // 80px + border.
+	--size-site-header: 5.25rem; // 82px + 2px border-layout.
 	--underline-thickness: 2px;
-	--viewport-width: 100vw; // Updated via setViewportWidth() JS.
+	--viewport-width: 100vw; // Updated for scrollbar via setViewportWidth() JS.
 }
 
 /* Theme Colorway Variables */

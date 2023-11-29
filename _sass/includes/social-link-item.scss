@@ -1,20 +1,20 @@
 .social-link-item {
-	margin: 0 0 0.75rem 0.7rem;
+	margin: 0 0 var(--space-small) var(--space-small);
 
 	&:first-child {
 		margin-right: 0;
 	}
 
 	@media #{$desktop} {
-		margin: 0 1.5rem 1.5rem;
+		margin: 0 var(--space-medium) var(--space-medium);
 
 		&:first-child {
-			margin-right: 1.5rem;
+			margin-right: var(--space-medium);
 		}
 	}
 
 	@at-root .site-footer & {
-		margin: 0.75rem 0.5rem;
+		margin: var(--space-small) var(--space-xsmall);
 	}
 }
 
@@ -30,7 +30,7 @@
 }
 
 .social-link-item svg {
-	height: 1.5rem;
-	width: 1.5rem;
+	height: var(--space-medium);
+	width: var(--space-medium);
 	fill: currentColor;
 }
