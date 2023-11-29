@@ -30,6 +30,7 @@
 	--size-offset: 0.1em; // define offset using ~2px for 20px font size.
 	--size-site-header: calc(5rem + 2px); // 80px + border.
 	--underline-thickness: 2px;
+	--viewport-width: 100vw; // Updated via setViewportWidth() JS.
 }
 
 /* Theme Colorway Variables */
