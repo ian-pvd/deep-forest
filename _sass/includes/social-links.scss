@@ -1,33 +1,43 @@
 .social-links {
 	position: relative;
 
-	@media #{$desktop} {
-		overflow: hidden;
-		padding: 0;
+	@at-root .site-header & {
+
+		@media #{$desktop} {
+			overflow: hidden;
+			padding: 0;
+		}
+	}
+
+	@at-root .site-footer & {
+		// Footer style overrides.
 	}
 }
 
 .social-links__toggle {
 	display: none;
 
-	@media #{$desktop} {
-		border: none;
-		cursor: pointer;
-		display: block;
-		margin: 0 auto;
-		overflow: hidden;
-		padding: 0;
+	@at-root .site-header & {
 
-		&::after {
-			background-color: var(--c-site-header);
-			content: "";
+		@media #{$desktop} {
+			border: none;
+			cursor: pointer;
 			display: block;
-			height: 48px;
-			left: 0;
-			position: absolute;
-			top: 0;
-			width: 100%;
-			z-index: 1;
+			margin: 0 auto;
+			overflow: hidden;
+			padding: 0;
+
+			&::after {
+				background-color: var(--c-site-header);
+				content: "";
+				display: block;
+				height: 48px;
+				left: 0;
+				position: absolute;
+				top: 0;
+				width: 100%;
+				z-index: 1;
+			}
 		}
 	}
 }
@@ -35,15 +45,17 @@
 .social-links__avatar {
 	display: none;
 
-	@media #{$desktop} {
-		border-radius: 50%;
-		display: block;
-		height: 100%;
-		height: var(--size-logo-desktop);
-		object-fit: cover;
-		position: relative;
-		width: var(--size-logo-desktop);
-		z-index: 10;
+	@at-root .site-header & {
+
+		@media #{$desktop} {
+			border-radius: 50%;
+			display: block;
+			height: var(--size-logo-desktop);
+			object-fit: cover;
+			position: relative;
+			width: var(--size-logo-desktop);
+			z-index: 10;
+		}
 	}
 }
 
@@ -56,18 +68,21 @@
 	margin: 0 auto;
 	padding: 0;
 
-	@media #{$desktop} {
-		background-color: var(--c-site-header);
-		flex-flow: column nowrap;
-		padding: 1.5rem 0 0;
-		transform: translate(0, -100%);
-		transition-duration: 0.25s;
-		transition-property: transform;
-		transition-timing-function: ease-in-out;
-		z-index: 0;
+	@at-root .site-header & {
 
-		&[aria-hidden="false"] {
-			transform: translate(0, 0);
+		@media #{$desktop} {
+			background-color: var(--c-site-header);
+			flex-flow: column nowrap;
+			padding: 1.5rem 0 0;
+			transform: translate(0, -100%);
+			transition-duration: 0.25s;
+			transition-property: transform;
+			transition-timing-function: ease-in-out;
+			z-index: 0;
+
+			&[aria-hidden="false"] {
+				transform: translate(0, 0);
+			}
 		}
 	}
 }

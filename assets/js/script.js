@@ -46,8 +46,8 @@ const toggleNavMenu = () => {
 
 const toggleSocialMenu = () => {
 	// Get menu elements.
-	const menuToggle = document.getElementById("social-links-toggle");
-	const menu = document.getElementById("social-links-menu");
+	const menuToggle = document.querySelector(".site-header #social-links-toggle");
+	const menu = document.querySelector(".site-header #social-links-menu");
 
 	// Show & hide the menu aria values based on viewport width.
 	const toggleViewportAria = () => {
