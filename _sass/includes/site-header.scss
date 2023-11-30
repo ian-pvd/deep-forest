@@ -135,7 +135,7 @@
 }
 
 .site-header__nav-item {
-	border-bottom: var(--border-hr);
+	border-bottom: var(--border-line);
 	font-size: var(--fs-large);
 	line-height: 1;
 	margin-bottom: var(--space-small);
@@ -180,7 +180,7 @@
 }
 
 .site-header__social-links {
-	border-top: var(--border-hr);
+	border-top: var(--border-line);
 	margin-top: var(--space-small);
 	padding-top: var(--space-medium);
 

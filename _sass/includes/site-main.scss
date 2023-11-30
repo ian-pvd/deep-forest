@@ -8,4 +8,5 @@
 
 .site-main__wrapper {
 	@include wrapper;
+	padding-top: var(--space-large);
 }

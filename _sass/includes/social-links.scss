@@ -11,6 +11,10 @@
 
 	@at-root .site-footer & {
 		margin-bottom: var(--space-medium);
+
+		@media #{$desktop} {
+			margin-bottom: 0;
+		}
 	}
 }
 
@@ -84,9 +88,5 @@
 				transform: translate(0, 0);
 			}
 		}
-	}
-
-	@at-root .site-footer & {
-		justify-content: flex-end;
 	}
 }

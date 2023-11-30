@@ -24,8 +24,7 @@
 				{% endif -%}
 				{%- if site.author.email -%}
 				<li class="site-footer__author-email">
-					<a class="site-footer__email-link" href="mailto:{{ site.author.email }}">mailto: {{
-						site.author.email }}</a>
+					<a class="site-footer__email-link" href="mailto:{{ site.author.email }}">{{site.author.email }}</a>
 				</li>
 				{%- endif %}
 			</ul>
@@ -52,16 +51,14 @@
 		</nav>
 		{%- endif -%}
 
-		<div class="site-footer__bottom">
-			<span class="site-footer__copyright">
-				{%- if site.license -%}
-				<a href="{{ site.license }}" target="_blank" rel="noopener nofollow">
-					{%- endif -%}
-					&copy; {{ site.title | escape }} {{ site.time | date: '%Y' }}
-					{%- if site.license -%}
-				</a>
+		<span class="site-footer__copyright">
+			{%- if site.license -%}
+			<a href="{{ site.license }}" target="_blank" rel="noopener nofollow">
 				{%- endif -%}
-			</span>
-		</div>
+				&copy; {{ site.title | escape }} {{ site.time | date: '%Y' }}
+				{%- if site.license -%}
+			</a>
+			{%- endif -%}
+		</span>
 	</div>
 </footer>

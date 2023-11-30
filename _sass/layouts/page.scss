@@ -1,3 +1,4 @@
 .page__title {
-	border-bottom: 4px solid currentColor;
+	padding-bottom: var(--space-medium);
+	border-bottom: var(--border-hr);
 }
