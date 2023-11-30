@@ -3,15 +3,15 @@
  */
 :root {
 	/* Colors */
-	--color-heavy-metal: hsl(120, 6%, 7.5%); // #121412
+	--color-black: #000; // #000000
 	--color-log-cabin: hsl(120, 3%, 4%); // #0a0b0a
-	--color-bon-jour: hsl(300, 6%, 90%); // #e7e4e7
-	--color-venus: hsl(300, 5.9%, 60%); // #9f939f
+	--color-heavy-metal: hsl(120, 6%, 7.5%); // #121412
+	--color-tom-thumb: hsl(120, 25%, 25%); // #305030
 	--color-tundora: hsl(300, 3%, 25%); // #423e42
 	--color-apple: hsl(120, 50%, 55%); // #53c653
 	--color-laurel: hsl(120, 15%, 50%); // #6c936c
-	--color-tom-thumb: hsl(120, 25%, 25%); // #305030
-	--color-black: #000;
+	--color-venus: hsl(300, 5.9%, 60%); // #9f939f
+	--color-bon-jour: hsl(300, 6%, 90%); // #e7e4e7
 
 	/* Color contexts */
 	--c-background: var(--color-heavy-metal);
