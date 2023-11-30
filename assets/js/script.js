@@ -5,6 +5,21 @@
 /* Import Utils */
 import { debounce, isMobile } from "./utils.js";
 
+const setViewportWidth = () => {
+
+	const updateViewportWidth = () => {
+		const scrollbarWidth =
+			window.innerWidth - document.documentElement.clientWidth;
+		document.documentElement.style.setProperty(
+			"--viewport-width",
+			`calc(100vw - ${scrollbarWidth}px)`
+		);
+	};
+
+	updateViewportWidth();
+	window.addEventListener("resize", debounce(updateViewportWidth), 150);
+};
+
 /**
  * Toggle Navigation Menu
  * Show & hide the mobile menu on desktop, or when clicked.
@@ -46,8 +61,10 @@ const toggleNavMenu = () => {
 
 const toggleSocialMenu = () => {
 	// Get menu elements.
-	const menuToggle = document.getElementById("social-links-toggle");
-	const menu = document.getElementById("social-links-menu");
+	const menuToggle = document.querySelector(
+		".site-header #social-links-toggle"
+	);
+	const menu = document.querySelector(".site-header #social-links-menu");
 
 	// Show & hide the menu aria values based on viewport width.
 	const toggleViewportAria = () => {
@@ -73,8 +90,10 @@ const toggleSocialMenu = () => {
 	});
 };
 
+
 /* Initialize Scripts */
 document.addEventListener("DOMContentLoaded", function () {
+	setViewportWidth();
 	toggleNavMenu();
 	toggleSocialMenu();
 });

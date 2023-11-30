@@ -4,16 +4,17 @@
 	color: var(--c-text);
 	display: flex;
 	height: var(--size-site-header);
-	padding: 1rem 1.5rem;
+	padding: 1rem var(--space-medium);
 	position: relative;
 	z-index: 10;
 
 	@media #{$desktop} {
-		align-items: unset;
+		align-items: flex-start;
 	}
 
 	&::after {
 		background-color: var(--c-site-header);
+		border-bottom: var(--border-layout);
 		bottom: 0;
 		content: "";
 		display: block;
@@ -35,7 +36,7 @@
 
 	@media #{$desktop} {
 		margin: 0 auto;
-		max-width: calc(54rem + 3rem); // 54rem + 3rem (half site header padding)
+		max-width: var(--mw-site-layout);
 	}
 }
 
@@ -45,7 +46,7 @@
 	margin: 0 1rem 0 0;
 
 	@media #{$desktop} {
-		margin: 0 1.5rem 0 0;
+		margin: 0 var(--space-medium) 0 0;
 	}
 }
 
@@ -60,12 +61,12 @@
 }
 
 .site-header__title {
-	font-size: clamp(1.5rem, 4vw, 2rem);
+	font-size: clamp(var(--space-medium), 4vw, 2rem);
 	margin: 0 1rem 0 0;
 
 	@media #{$desktop} {
 		display: flex;
-		margin: 0 1.5rem 0 0;
+		margin: 0 var(--space-medium) 0 0;
 	}
 }
 
@@ -95,7 +96,7 @@
 	top: var(--size-site-header);
 	transform: translate(-50%, -100%);
 	transition: transform 0.25s ease-in-out;
-	width: 100vw;
+	width: var(--viewport-width);
 	z-index: -1;
 
 	&[aria-hidden="false"] {
@@ -108,7 +109,7 @@
 		background-color: transparent;
 		display: flex;
 		flex-direction: row;
-		height: clamp(2rem, 5vw, 3rem);
+		height: clamp(2rem, 5vw, var(--space-large));
 		left: auto;
 		margin: 0 0 0 auto;
 		overflow: unset;
@@ -129,16 +130,16 @@
 
 	@media #{$desktop} {
 		display: flex;
-		margin-right: 1.5rem;
+		margin-right: var(--space-medium);
 	}
 }
 
 .site-header__nav-item {
-	border-bottom: var(--border-hr);
+	border-bottom: var(--border-line);
 	font-size: var(--fs-large);
 	line-height: 1;
-	margin-bottom: 0.75rem;
-	padding-bottom: 0.75rem;
+	margin-bottom: var(--space-small);
+	padding-bottom: var(--space-small);
 
 	&:last-child {
 		border-bottom: none;
@@ -158,7 +159,7 @@
 	color: var(--c-text);
 	display: block;
 	font-weight: bold;
-	padding: 0.75rem 0;
+	padding: var(--space-small) 0;
 	text-decoration: none;
 	transition-property: text-indent;
 
@@ -166,7 +167,7 @@
 	&:hover {
 		color: var(--c-link);
 		text-decoration: none;
-		text-indent: 0.25rem;
+		text-indent: 0.125rem;
 	}
 
 	@media #{$desktop} {
@@ -179,9 +180,9 @@
 }
 
 .site-header__social-links {
-	border-top: var(--border-hr);
-	margin-top: 0.75rem;
-	padding-top: 1.5rem;
+	border-top: var(--border-line);
+	margin-top: var(--space-small);
+	padding-top: var(--space-medium);
 
 	@media #{$desktop} {
 		align-self: flex-start;
@@ -194,7 +195,7 @@
 .site-header__nav-toggle {
 	align-items: center;
 	background-color: transparent;
-	border: 1px solid #666;
+	border: var(--border-ui);
 	color: var(--c-text);
 	cursor: pointer;
 	display: flex;

@@ -1,8 +1,10 @@
 title: Deep Forest
 repo: https://github.com/ian-pvd/deep-forest
+license: https://github.com/ian-pvd/deep-forest/blob/main/LICENSE.txt
 author:
   name: ian-pvd
   email: pvdindustrial@gmail.com
+twitter: deep-forest
 
 # Jekyll plugins
 plugins:
