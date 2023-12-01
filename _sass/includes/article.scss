@@ -1,10 +1,10 @@
 .article__featured-image {
 	@include full-bleed;
 	width: var(--viewport-width);
-	margin: -3rem calc(-1 * var(--space-large)) var(--space-medium);
+	margin: calc(-1 * var(--space-large)) calc(-1 * var(--space-large)) var(--space-medium);
 
 	@media #{$desktop} {
-		margin: 0 -3rem 3rem;
+		margin: 0 calc(-1 * var(--space-large)) var(--space-large);
 		width: calc(100% + var(--space-xlarge));
 	}
 
@@ -27,7 +27,7 @@
 	display: flex;
 	font-size: 16px;
 	justify-content: space-between;
-	margin: 0 0 3rem;
+	margin: 0 0 var(--space-large);
 }
 
 .article__date {
