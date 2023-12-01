@@ -1,4 +1,27 @@
 .page__title {
+	border-bottom: var(--border-layout);
+	margin-bottom: var(--space-medium);
 	padding-bottom: var(--space-medium);
-	border-bottom: var(--border-hr);
+}
+
+.page__content {
+	border-bottom: var(--border-layout);
+	margin-bottom: var(--space-large);
+	padding-bottom: var(--space-large);
+}
+
+.page__footer-links {
+	align-items: center;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.page__home-link,
+.article__hire-me-link {
+	@include button;
+	margin-right: var(--space-small);
+
+	@media #{$desktop} {
+		margin-right: var(--space-medium);
+	}
 }
