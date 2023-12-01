@@ -1,7 +1,7 @@
 .home__wrapper {
-	margin-top: -3rem;
-	margin: 0 0 4.5rem 50%;
-	padding: 24px 0 4.5rem;
+	margin-top: calc(-1 * var(--space-large));
+	margin: 0 0 var(--space-xlarge) 50%;
+	padding: 24px 0 var(--space-xlarge);
 	position: relative;
 	transform: translate(-50%, 0);
 	width: var(--viewport-width);
@@ -13,17 +13,18 @@
 		left: 0;
 		width: 100%;
 		height: 100%;
-		border-bottom: var(--border-hr);
+		border-bottom: var(--border-layout);
 		background-image: url('/assets/images/fake-brick.png');
 		opacity: 0.25;
+		z-index: -1;
 	}
 }
 
 .home__title,
 .home__content {
 	@include wrapper;
-	padding-top: 1.5rem;
-	padding-bottom: 1.5rem;
+	padding-top: var(--space-medium);
+	padding-bottom: var(--space-medium);
 }
 
 .home__content {
@@ -31,8 +32,8 @@
 }
 
 .home__posts-title {
-	margin-bottom: 1.5rem;
-	padding-bottom: 1.5rem;
+	margin-bottom: var(--space-large);
+	padding-bottom: var(--space-medium);
 	border-bottom: var(--border-layout);
 	line-height: 1;
 }
@@ -40,5 +41,13 @@
 .home__posts-list {
 	list-style: none;
 	margin: 0;
-	padding: 0 0 3rem;
+	padding: 0 0 var(--space-large);
+}
+
+.home__posts-item {
+	margin-bottom: var(--space-large);
+
+	&:last-child {
+		margin-bottom: 0;
+	}
 }

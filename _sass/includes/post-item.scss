@@ -1,3 +1,40 @@
+.home {
+	border-bottom: var(--border-layout);
+}
+
 .post-item__home-link {
 	@include button;
+}
+
+.post-item__title {
+	margin-bottom: var(--space-xxsmall);
+	max-width: 20em;
+
+	@media #{$desktop} {
+		max-width: 24em;
+	}
+}
+
+.post-item__meta {
+	margin-bottom: var(--space-xxsmall);
+}
+
+.post-item__date {
+	color: var(--color-venus);
+	display: block;
+	font-size: 1rem;
+	font-weight: bold;
+	line-height: calc(5/3);
+	margin-bottom: var(--space-xxsmall);
+	margin-right: 0.75rem;
+	text-transform: uppercase;
+}
+
+.post-item__category {
+	border-radius: 0.25em;
+	display: block;
+	font-size: 14px;
+	line-height: 1;
+	margin-right: 0;
+	text-transform: uppercase;
 }

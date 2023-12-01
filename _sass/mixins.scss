@@ -30,7 +30,7 @@
 	display: block;
 	height: auto;
 	margin: var(--space-large) calc(-1 * var(--space-large));
-	width: calc(100% + var(--space-xlarge));
+	width: calc(100% + var(--space-xxlarge));
 }
 
 @mixin content {
@@ -47,7 +47,7 @@
 
 		@media #{$desktop} {
 			margin: var(--space-large) calc(-1 * var(--space-large));
-			width: calc(100% + var(--space-xlarge));
+			width: calc(100% + var(--space-xxlarge));
 		}
 	}
 

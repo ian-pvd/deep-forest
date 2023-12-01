@@ -5,7 +5,7 @@
 
 	@media #{$desktop} {
 		margin: 0 calc(-1 * var(--space-large)) var(--space-large);
-		width: calc(100% + var(--space-xlarge));
+		width: calc(100% + var(--space-xxlarge));
 	}
 
 	& img {
@@ -35,7 +35,8 @@
 	display: inline-block;
 	font-weight: bold;
 	line-height: calc(5/3);
-	margin-right: 0.75rem;
+	margin-right: var(--space-small);
+	text-transform: uppercase;
 }
 
 .article__category {

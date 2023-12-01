@@ -25,12 +25,12 @@ layout: default
 
 		{%- if posts.size > 0 -%}
 		{%- if page.list_title -%}
-		<h2 class="home_posts-heading">{{ page.list_title }}</h2>
+		<h2 class="home__posts-heading">{{ page.list_title }}</h2>
 		{%- endif -%}
 		<ul class="home__posts-list">
 			{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
 			{%- for post in posts -%}
-			<li class="home_posts-item">
+			<li class="home__posts-item">
 				{%- include post-item.html -%}
 			</li>
 			{%- endfor -%}

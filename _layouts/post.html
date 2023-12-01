@@ -15,7 +15,7 @@ layout: default
 			{{ page.title | escape }}
 		</h1>
 		<div class="article__meta">
-			<span class="article__date" aria-label="Post Date">{{ page.date | date: date_format }}</span>
+			<span class="article__date" aria-label="Post Date">{{ page.date | date: "%h %e, %Y" }}</span>
 			{%- if page.category -%}
 			<span class="article__category" aria-label="Post Date">{{ page.category }}</span>
 			{%- endif -%}
@@ -34,7 +34,7 @@ layout: default
 			{% assign pageUrl = page.url | absolute_url %}
 			{% assign tweetText = "@" | append: twitterHandle %}
 
-			<a class="article__home-link" rel="home" href="{{ " /" | relative_url }}">Home</a>
+			<a class="article__home-link" rel="home" href="{{ "/" | relative_url }}">Home</a>
 			<a class="article__reply-link"
 				href="http://twitter.com/share?text={{ tweetText | cgi_escape }}&url={{ pageUrl }}" target="_blank"
 				rel="noopener nofollow">Reply</a>
