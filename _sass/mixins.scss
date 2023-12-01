@@ -15,8 +15,9 @@
 
 @mixin wrapper {
 	margin: 0 auto;
+	max-width: 50rem;
 	padding: var(--space-large) var(--space-medium);
-	width: clamp(20rem, 100%, 36em);
+	width: 100%;
 
 	@media #{$desktop} {
 		padding: var(--space-large);
@@ -29,7 +30,7 @@
 	display: block;
 	height: auto;
 	margin: var(--space-large) calc(-1 * var(--space-large));
-	width: calc(100% + var(--space-xlarge));
+	width: calc(100% + var(--space-xxlarge));
 }
 
 @mixin content {
@@ -46,7 +47,7 @@
 
 		@media #{$desktop} {
 			margin: var(--space-large) calc(-1 * var(--space-large));
-			width: calc(100% + var(--space-xlarge));
+			width: calc(100% + var(--space-xxlarge));
 		}
 	}
 
