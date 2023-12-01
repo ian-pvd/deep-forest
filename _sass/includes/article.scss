@@ -1,10 +1,12 @@
-.article {
-	padding-top: 1.5rem;
-}
-
 .article__featured-image {
 	@include full-bleed;
-	margin-top: 0;
+	width: var(--viewport-width);
+	margin: -3rem calc(-1 * var(--space-large)) var(--space-medium);
+
+	@media #{$desktop} {
+		margin: 0 -3rem 3rem;
+		width: calc(100% + var(--space-xlarge));
+	}
 
 	& img {
 		display: block;
@@ -15,9 +17,9 @@
 }
 
 .article__title {
-	border-bottom: var(--border-hr);
-	margin-bottom: 0.75rem;
-	padding-bottom: 3rem;
+	border-bottom: var(--border-layout);
+	margin-bottom: var(--space-medium);
+	padding-bottom: var(--space-medium);
 }
 
 .article__meta {
@@ -28,7 +30,7 @@
 	margin: 0 0 3rem;
 }
 
-.article__post-date {
+.article__date {
 	color: var(--color-venus);
 	display: inline-block;
 	font-weight: bold;
@@ -36,7 +38,7 @@
 	margin-right: 0.75rem;
 }
 
-.article__post-category {
+.article__category {
 	background-color: var(--c-highlight);
 	border-radius: 0.25em;
 	display: inline-block;
@@ -48,16 +50,24 @@
 }
 
 .article__content {
-	font-size: 22px; // set clamp max font size to 22px
-	margin-bottom: 2rem;
+	padding-bottom: var(--space-large);
+	border-bottom: var(--border-layout);
+	margin-bottom: var(--space-large);
 
 	& p {
-		margin-bottom: 1.5rem;
+		margin-bottom: var(--space-medium);
 	}
 
 	& img,
 	& iframe {
 		@include full-bleed;
+		width: 100%;
+		margin: var(--space-medium) auto;
+
+		@media #{$desktop} {
+			margin: var(--space-large) calc(-1 * var(--space-large));
+			width: calc(100% + var(--space-xlarge));
+		}
 	}
 
 	& iframe {
@@ -67,18 +77,18 @@
 	// All code blocks.
 	& .highlighter-rouge {
 		background: var(--c-site-header);
-		border-radius: 0.5rem;
+		border-radius: var(--space-xsmall);
 		box-shadow: 0 0 3px -1px var(--c-text);
-		font-size: 18px;
+		font-size: var(--fs-small);
 		padding: 4px 8px;
 	}
 
 	// Fenced code blocks.
 	& > .highlighter-rouge {
 		box-shadow: 0 0 3px -1px var(--c-text), 0 12px 6px -9px var(--color-black);
-		margin: 3rem -1.5rem;
-		padding: 1.5rem;
-		width: calc(100% + 3rem);
+		margin: var(--space-large) calc(-1 * var(--space-medium));
+		padding: var(--space-medium);
+		width: calc(100% + var(--space-large));
 	}
 
 	& > *:last-child {
@@ -95,5 +105,9 @@
 .article__reply-link,
 .article__home-link {
 	@include button;
-	margin-right: 0.75rem;
+	margin-right: var(--space-small);
+
+	@media #{$desktop} {
+		margin-right: var(--space-medium);
+	}
 }

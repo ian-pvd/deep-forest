@@ -6,7 +6,7 @@ layout: default
 
 	{%- if page.image -%}
 	<figure class="article__featured-image">
-		<img class="article__image" src="/images/a-dark-forest.png" alt="{{ page.title | escape }}">
+		<img class="article__image" src="/assets/images/{{ page.image }}" alt="{{ page.title | escape }}">
 	</figure>
 	{%- endif -%}
 
@@ -14,10 +14,10 @@ layout: default
 		<h1 class="article__title">
 			{{ page.title | escape }}
 		</h1>
-		<div class="article__post-meta">
-			<span class="article__post-date" aria-label="Post Date">{{ page.date | date: date_format }}</span>
+		<div class="article__meta">
+			<span class="article__date" aria-label="Post Date">{{ page.date | date: date_format }}</span>
 			{%- if page.category -%}
-			<span class="article__post-category" aria-label="Post Date">{{ page.category }}</span>
+			<span class="article__category" aria-label="Post Date">{{ page.category }}</span>
 			{%- endif -%}
 		</div>
 	</header>
@@ -32,14 +32,12 @@ layout: default
 			{% assign twitterHandle = site.twitter %}
 			{% assign pageTitle = page.title %}
 			{% assign pageUrl = page.url | absolute_url %}
-			{% assign tweetText = "@{{ twitterHandle }} re:{{ pageTitle }}\n" %}
+			{% assign tweetText = "@" | append: twitterHandle %}
 
-			<a class="article__home-link" rel="home" href="{{ "/" | relative_url }}">
-				Home
-			</a>
-			<a class="article__reply-link" href="http://twitter.com/share?text={{ tweetText | cgi_escape }}&url={{ pageUrl }}" target="_blank" rel="noopener nofollow">
-				Reply
-			</a>
+			<a class="article__home-link" rel="home" href="{{ " /" | relative_url }}">Home</a>
+			<a class="article__reply-link"
+				href="http://twitter.com/share?text={{ tweetText | cgi_escape }}&url={{ pageUrl }}" target="_blank"
+				rel="noopener nofollow">Reply</a>
 		</nav>
 	</div>
 </article>

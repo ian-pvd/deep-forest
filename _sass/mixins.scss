@@ -15,8 +15,12 @@
 
 @mixin wrapper {
 	margin: 0 auto;
-	padding: clamp(var(--space-medium), 5vw, var(--space-large));
+	padding: var(--space-large) var(--space-medium);
 	width: clamp(20rem, 100%, 36em);
+
+	@media #{$desktop} {
+		padding: var(--space-large);
+	}
 }
 
 @mixin full-bleed {

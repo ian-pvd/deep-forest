@@ -61,7 +61,7 @@
 }
 
 .site-header__title {
-	font-size: clamp(var(--fs-large), 4vw, var(--fs-xlarge));
+	font-size: clamp(var(--fs-xlarge), 4vw, var(--fs-xxlarge));
 	margin: 0 1rem 0 0;
 
 	@media #{$desktop} {
@@ -109,7 +109,7 @@
 		background-color: transparent;
 		display: flex;
 		flex-direction: row;
-		height: clamp(2rem, 5vw, var(--space-large));
+		height: var(--space-large);
 		left: auto;
 		margin: 0 0 0 auto;
 		overflow: unset;
@@ -136,7 +136,7 @@
 
 .site-header__nav-item {
 	border-bottom: var(--border-line);
-	font-size: var(--fs-large);
+	font-size: var(--fs-xlarge);
 	line-height: 1;
 	margin-bottom: var(--space-small);
 	padding-bottom: var(--space-small);
@@ -199,7 +199,7 @@
 	color: var(--c-text);
 	cursor: pointer;
 	display: flex;
-	font-size: var(--fs-large);
+	font-size: var(--fs-xlarge);
 	height: 2.5rem;
 	justify-content: center;
 	line-height: 1;
