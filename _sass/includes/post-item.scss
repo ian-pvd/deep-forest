@@ -9,9 +9,17 @@
 .post-item__title {
 	margin-bottom: var(--space-xxsmall);
 	max-width: 20em;
+	text-wrap: balance;
+	width: 100%;
+}
 
-	@media #{$desktop} {
-		max-width: 24em;
+.post-item__link {
+
+	&:focus,
+	&:hover {
+		text-decoration-thickness: var(--underline-thickness);
+		text-decoration-line: dotted;
+		text-underline-offset: var(--size-offset);
 	}
 }
 

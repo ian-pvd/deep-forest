@@ -1,7 +1,7 @@
 .home__wrapper {
 	margin-top: calc(-1 * var(--space-large));
-	margin: 0 0 var(--space-xlarge) 50%;
-	padding: 24px 0 var(--space-xlarge);
+	margin: 0 0 var(--space-large) 50%;
+	padding: var(--space-medium) 0 var(--space-xlarge);
 	position: relative;
 	transform: translate(-50%, 0);
 	width: var(--viewport-width);
@@ -27,8 +27,16 @@
 	padding-bottom: var(--space-medium);
 }
 
+.home__title {
+	text-wrap: balance;
+}
+
 .home__content {
 	@include content;
+}
+
+.home__posts {
+	padding-top: var(--space-medium);
 }
 
 .home__posts-title {
