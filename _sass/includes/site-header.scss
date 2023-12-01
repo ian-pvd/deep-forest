@@ -61,7 +61,7 @@
 }
 
 .site-header__title {
-	font-size: clamp(var(--space-medium), 4vw, 2rem);
+	font-size: clamp(var(--fs-large), 4vw, var(--fs-xlarge));
 	margin: 0 1rem 0 0;
 
 	@media #{$desktop} {
