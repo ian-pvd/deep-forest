@@ -15,6 +15,63 @@
 
 @mixin wrapper {
 	margin: 0 auto;
-	padding: clamp(var(--space-medium), 5vw, 2rem);
+	padding: var(--space-large) var(--space-medium);
 	width: clamp(20rem, 100%, 36em);
+
+	@media #{$desktop} {
+		padding: var(--space-large);
+	}
+}
+
+@mixin full-bleed {
+	background-color: var(--color-black);
+	box-shadow: 0 12px 6px -9px var(--color-black);
+	display: block;
+	height: auto;
+	margin: 3rem -3rem;
+	width: calc(100% + 6rem);
+}
+
+@mixin content {
+
+	& p {
+		margin-bottom: var(--space-medium);
+	}
+
+	& img,
+	& iframe {
+		@include full-bleed;
+		width: 100%;
+		margin: var(--space-medium) auto;
+
+		@media #{$desktop} {
+			margin: var(--space-large) calc(-1 * var(--space-large));
+			width: calc(100% + var(--space-xlarge));
+		}
+	}
+
+	& iframe {
+		aspect-ratio: 16 / 9;
+	}
+
+	// All code blocks.
+	& .highlighter-rouge {
+		background: var(--c-site-header);
+		border-radius: var(--space-xsmall);
+		box-shadow: 0 0 3px -1px var(--c-text);
+		font-size: var(--fs-small);
+		padding: 4px 8px;
+	}
+
+	// Fenced code blocks.
+	& > .highlighter-rouge {
+		box-shadow: 0 0 3px -1px var(--c-text), 0 12px 6px -9px var(--color-black);
+		margin: var(--space-large) calc(-1 * var(--space-medium));
+		padding: var(--space-medium);
+		width: calc(100% + var(--space-large));
+	}
+
+	& > *:last-child {
+		margin-bottom: 0;
+	}
 }

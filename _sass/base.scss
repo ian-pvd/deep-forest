@@ -43,9 +43,18 @@ a {
 	&:focus,
 	&:hover {
 		color: var(--c-link-hover);
-		text-decoration-thickness: var(--underline-thickness);
-		text-decoration-line: underline;
-		text-underline-offset: var(--size-offset);
+		text-decoration: underline;
+	}
+
+	// Chunky underlines
+	&.post-item__link {
+
+		&:focus,
+		&:hover {
+			text-decoration-thickness: var(--underline-thickness);
+			text-decoration-line: underline;
+			text-underline-offset: var(--size-offset);
+		}
 	}
 }
 
