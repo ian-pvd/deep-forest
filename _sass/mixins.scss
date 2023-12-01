@@ -15,8 +15,9 @@
 
 @mixin wrapper {
 	margin: 0 auto;
+	max-width: 50rem;
 	padding: var(--space-large) var(--space-medium);
-	width: clamp(20rem, 100%, 36em);
+	width: 100%;
 
 	@media #{$desktop} {
 		padding: var(--space-large);

@@ -1,0 +1,44 @@
+.home__wrapper {
+	margin-top: -3rem;
+	margin: 0 0 4.5rem 50%;
+	padding: 24px 0 4.5rem;
+	position: relative;
+	transform: translate(-50%, 0);
+	width: var(--viewport-width);
+
+	&::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		border-bottom: var(--border-hr);
+		background-image: url('/assets/images/fake-brick.png');
+		opacity: 0.25;
+	}
+}
+
+.home__title,
+.home__content {
+	@include wrapper;
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
+}
+
+.home__content {
+	@include content;
+}
+
+.home__posts-title {
+	margin-bottom: 1.5rem;
+	padding-bottom: 1.5rem;
+	border-bottom: var(--border-layout);
+	line-height: 1;
+}
+
+.home__posts-list {
+	list-style: none;
+	margin: 0;
+	padding: 0 0 3rem;
+}

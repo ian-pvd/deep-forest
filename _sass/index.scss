@@ -8,11 +8,12 @@
 @import "accessibility";
 
 /* Layouts & Includes */
-@import "includes/article";
 @import "includes/post-item";
 @import "includes/site-footer";
 @import "includes/site-header";
 @import "includes/site-main";
 @import "includes/social-link-item";
 @import "includes/social-links";
+@import "layouts/article";
+@import "layouts/home";
 @import "layouts/page";
