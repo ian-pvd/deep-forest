@@ -2,20 +2,20 @@
 layout: default
 ---
 
-<div class="posts">
+<div class="post-list">
 
-  <h1 class="posts__title">{{ page.title | escape }}</h1>
+  <h1 class="post-list__title">{{ page.title | escape }}</h1>
 
-  <section class="posts__posts" id="home-posts">
-		<h2 class="posts__posts-title">Posts</h2>
+  <section class="post-list__posts" id="home-posts">
+		<h2 class="post-list__posts-title">Posts</h2>
 
 		{% assign posts = site.posts %}
 
 		{%- if posts.size > 0 -%}
-		<ul class="posts__posts-list">
+		<ul class="post-list__posts-list">
 			{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
 			{%- for post in posts -%}
-			<li class="posts__posts-item">
+			<li class="post-list__posts-item">
 				{%- include post-item.html -%}
 			</li>
 			{%- endfor -%}
