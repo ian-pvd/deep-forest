@@ -20,10 +20,10 @@ layout: default
 		{% assign posts = site.posts | slice: 0, 3 %}
 
 		{%- if posts.size > 0 -%}
-		<ul class="posts__posts-list">
+		<ul class="home__posts-list">
 			{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
 			{%- for post in posts -%}
-			<li class="posts__posts-item">
+			<li class="home__posts-item">
 				{%- include post-item.html -%}
 			</li>
 			{%- endfor -%}

@@ -42,16 +42,16 @@ description: >
 primary_nav:
   - resume.md
   - portfolio.md
-  - about.md
   - posts.md
+  - about.md
 
 # Add pages to the site-footer utilities navigation in this order.
 utilities_nav:
   - about.md
+  - contact.md
   - posts.md
   - portfolio.md
   - resume.md
-  - contact.md
 
 # Social media links
 social_links:
