@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+<div class="posts">
+
+  <h1 class="posts__title">{{ page.title | escape }}</h1>
+
+  {{ content }}
+
+  {% assign posts = site.posts %}
+
+  {%- if posts.size > 0 -%}
+    <ul class="posts__posts-list">
+      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+      {%- for post in posts -%}
+        <li class="posts__posts-item">
+        {%- include post-item.html -%}
+        </li>
+      {%- endfor -%}
+    </ul>
+
+  {%- else -%}
+    <span> No posts to display. </span>
+  {%- endif -%}
+</div>
