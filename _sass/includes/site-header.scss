@@ -93,6 +93,7 @@
 	height: 100vh;
 	left: 50%;
 	overflow: auto;
+	padding: var(--space-medium);
 	position: absolute;
 	top: var(--size-site-header);
 	transform: translate(-50%, -100%);

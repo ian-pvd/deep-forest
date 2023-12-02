@@ -1,7 +1,7 @@
 ---
 title: "Reset your dev environment"
 layout: post
-category: reset
+topic: reset
 ---
 
 You should probably reformat and factory reset your laptop either between major OS versions, projects, or yearly. The files on your work machine probably all exist somewhere in the cloud.
