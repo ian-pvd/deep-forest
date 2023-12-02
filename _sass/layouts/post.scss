@@ -67,8 +67,7 @@
 	justify-content: flex-start;
 }
 
-.article__reply-link,
-.article__home-link {
+.article__link {
 	@include button;
 	margin-right: var(--space-small);
 
