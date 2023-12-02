@@ -26,11 +26,15 @@
 
 @mixin full-bleed {
 	background-color: var(--color-black);
-	box-shadow: 0 12px 6px -9px var(--color-black);
+	box-shadow: 0 4px 4px -2px var(--color-black);
 	display: block;
 	height: auto;
 	margin: var(--space-large) calc(-1 * var(--space-large));
 	width: calc(100% + var(--space-xxlarge));
+
+	@media #{$desktop} {
+		box-shadow: 0 12px 6px -9px var(--color-black);
+	}
 }
 
 @mixin content {

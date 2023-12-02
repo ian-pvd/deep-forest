@@ -8,8 +8,9 @@ export const media = {
 	mobile: { width: "min", px: 320 },
 	tablet: { width: "min", px: 540 },
 	desktop: { width: "min", px: 768 },
-	large: { width: "min", px: 1280 },
-	x_large: { width: "min", px: 1440 },
+	large: { width: "min", px: 896 },
+	xlarge: { width: "min", px: 1280 },
+	xxlarge: { width: "min", px: 1440 },
 };
 
 /* Check media query */

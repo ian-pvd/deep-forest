@@ -1,11 +1,15 @@
 .article__featured-image {
 	@include full-bleed;
 	width: var(--viewport-width);
-	margin: calc(-1 * var(--space-large)) calc(-1 * var(--space-large)) var(--space-medium);
+	margin: calc(-1 * var(--space-large)) calc(-1 * var(--space-medium)) var(--space-medium);
 
 	@media #{$desktop} {
-		margin: 0 calc(-1 * var(--space-large)) var(--space-large);
+		margin: calc(-1 * var(--space-large)) calc(-1 * var(--space-large)) var(--space-large);
 		width: calc(100% + var(--space-xxlarge));
+	}
+
+	@media #{$large} {
+		margin-top: 0;
 	}
 
 	& img {
