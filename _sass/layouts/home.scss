@@ -33,6 +33,15 @@
 
 .home__content {
 	@include content;
+
+	@media #{$desktop} {
+		padding-top: var(--space-medium);
+	}
+
+	@media #{$xlarge} {
+		padding-top: var(--space-large);
+		padding-bottom: var(--space-large);
+	}
 }
 
 .home__posts {
