@@ -34,6 +34,8 @@ logo_url: '/assets/images/logo.svg' # logo url, default: /assets/logo.png
 
 description: >
   Jekyll portfolio theme for developers
+about: >
+  Deep Forest is a theme for developer portfolios hosted on github pages. Add examples of your work, blog posts, or a resume.
 
 # To enable Google Analytics, add your tracking ID here.
 # google_analytics: UA-NNNNNNNN-N
