@@ -80,3 +80,16 @@
 		margin-bottom: 0;
 	}
 }
+
+@mixin screen-reader-text {
+	border: 0;
+	clip-path: inset(50%);
+	clip: rect(1px, 1px, 1px, 1px);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+	word-wrap: normal !important;
+}

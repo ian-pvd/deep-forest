@@ -1,0 +1,27 @@
+.posts__title {
+	border-bottom: var(--border-layout);
+	margin-bottom: var(--space-medium);
+	padding-bottom: var(--space-medium);
+}
+
+.posts__posts {
+	padding-top: var(--space-medium);
+}
+
+.posts__posts-title {
+	@include screen-reader-text;
+}
+
+.posts__posts-list {
+	list-style: none;
+	margin: 0;
+	padding: 0 0 var(--space-large);
+}
+
+.posts__posts-item {
+	margin-bottom: var(--space-large);
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}

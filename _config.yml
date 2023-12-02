@@ -47,11 +47,11 @@ primary_nav:
 
 # Add pages to the site-footer utilities navigation in this order.
 utilities_nav:
-  - about.md
-  - contact.md
-  - posts.md
-  - portfolio.md
   - resume.md
+  - portfolio.md
+  - posts.md
+  - contact.md
+  - about.md
 
 # Social media links
 social_links:
