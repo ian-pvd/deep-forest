@@ -1,5 +1,6 @@
 .page__title {
 	border-bottom: var(--border-layout);
+	letter-spacing: 0.033em;
 	margin-bottom: var(--space-medium);
 	padding-bottom: var(--space-medium);
 }
@@ -17,8 +18,7 @@
 	justify-content: flex-start;
 }
 
-.page__home-link,
-.article__hire-me-link {
+.page__footer-link {
 	@include button;
 	margin-right: var(--space-small);
 

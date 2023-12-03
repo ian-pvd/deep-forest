@@ -20,10 +20,10 @@ layout: default
 		{% assign posts = site.posts | slice: 0, 3 %}
 
 		{%- if posts.size > 0 -%}
-		<ul class="home__posts-list">
+		<ul class="home__post-list">
 			{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
 			{%- for post in posts -%}
-			<li class="home__posts-item">
+			<li class="home__post-item">
 				{%- include post-item.html -%}
 			</li>
 			{%- endfor -%}
@@ -35,9 +35,9 @@ layout: default
 
 	</section>
 
-	<div class="article__footer">
-		<nav class="article__footer-links">
-			<a class="article__link" rel="home" href="{{ "/posts/" | relative_url }}">Read More</a>
+	<div class="home__footer">
+		<nav class="home__footer-links">
+			<a class="home__footer-link" rel="home" href="{{ "/posts/" | relative_url }}">Read More</a>
 		</nav>
 	</div>
 

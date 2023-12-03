@@ -4,8 +4,9 @@
 @import "mixins";
 
 /* Utilities */
-@import "base";
 @import "accessibility";
+@import "animations";
+@import "base";
 
 /* Layouts & Includes */
 @import "includes/post-item";

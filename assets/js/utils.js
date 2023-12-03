@@ -43,13 +43,6 @@ export const debounce = (func, wait) => {
 
 export const isMobile = () => {
 
-	// If this is a mobile device, return true.
-	// DEV NOTE: Viewports larger than 768px will always get desktop styles.
-	// const userAgent = navigator.userAgent.toLowerCase();
-	// if (/android|blackberry|iemobile|ipad|iphone|ipod|opera mini|webos/i.test(userAgent)) {
-	// 	return true;
-	// }
-
 	// If the viewport is 768px or larger, return false.
 	if (checkMediaQuery("desktop")) {
 		return false;

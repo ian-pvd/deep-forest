@@ -24,6 +24,7 @@
 
 .article__title {
 	border-bottom: var(--border-layout);
+	letter-spacing: calc(0.033em / 2);
 	margin-bottom: var(--space-medium);
 	padding-bottom: var(--space-medium);
 }
@@ -31,8 +32,9 @@
 .article__meta {
 	align-items: center;
 	display: flex;
-	font-size: 16px;
+	font-size: var(--fs-xsmall);
 	justify-content: space-between;
+	letter-spacing: 0.033em;
 	margin: 0 0 var(--space-large);
 }
 
@@ -58,9 +60,9 @@
 
 .article__content {
 	@include content;
-	padding-bottom: var(--space-large);
 	border-bottom: var(--border-layout);
 	margin-bottom: var(--space-large);
+	padding-bottom: var(--space-large);
 }
 
 .article__footer-links {
@@ -70,10 +72,11 @@
 	justify-content: flex-start;
 }
 
-.article__link {
+.article__footer-link {
 	@include button;
-	margin-right: var(--space-small);
+	letter-spacing: calc(0.033em / 2);
 	margin-bottom: var(--space-small);
+	margin-right: var(--space-small);
 	white-space: nowrap;
 
 	@media #{$desktop} {

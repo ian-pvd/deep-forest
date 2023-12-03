@@ -32,15 +32,6 @@
 	}
 }
 
-.site-footer__about {
-
-	@media #{$desktop} {
-		grid-row: span 2;
-		margin: 0;
-		padding: var(--space-medium) var(--space-large) var(--space-medium) 0;
-	}
-}
-
 .site-footer__title {
 	font-size: var(--fs-xlarge);
 	letter-spacing: 0.033em;
@@ -55,6 +46,9 @@
 
 	@media #{$desktop} {
 		font-size: var(--fs-small);
+		grid-row: span 2;
+		margin: 0;
+		padding: var(--space-medium) var(--space-large) var(--space-medium) 0;
 	}
 }
 
@@ -127,6 +121,7 @@
 }
 
 .site-footer__nav-item {
+	letter-spacing: 0.033em;
 	margin: 0 var(--space-xsmall) var(--space-xxsmall);
 }
 
