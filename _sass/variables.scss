@@ -31,13 +31,13 @@
 	--fs-xxlarge: 2rem; // 32px
 
 	/* Spacing Values */
-	--space-xxsmall: 0.25rem;
-	--space-xsmall: 0.5rem;
-	--space-small: 0.75rem;
-	--space-medium: 1.5rem;
-	--space-large: 3rem;
-	--space-xlarge: 4.5rem;
-	--space-xxlarge: 6rem;
+	--space-xxsmall: 0.25rem; // 4px
+	--space-xsmall: 0.5rem; // 8px
+	--space-small: 0.75rem; // 12px
+	--space-medium: 1.5rem; // 24px
+	--space-large: 3rem; // 48px
+	--space-xlarge: 4.5rem; // 72px
+	--space-xxlarge: 6rem; // 96px
 
 	/* Borders */
 	--border-hr:  4px solid var(--color-black);
@@ -48,9 +48,9 @@
 	/* TODO: Organize the other variables. */
 	--mw-site-layout: calc(54rem + var(--space-large)); // 54rem + 3rem (half site footer padding)
 	--size-logo-desktop: 3rem; // 48px
-	--size-offset: 0.1em; // define offset using ~2px for 20px font size.
+	--size-offset: 0.075em;
 	--size-site-header: 5.25rem; // 82px + 2px border-layout.
-	--underline-thickness: 2px;
+	--underline-thickness: 0.1em;
 	--viewport-width: 100vw; // Updated for scrollbar via setViewportWidth() JS.
 }
 

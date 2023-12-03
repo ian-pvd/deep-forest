@@ -1,7 +1,7 @@
 ---
 title: "I like posting photos from hiking trips"
 layout: post
-category: outside
+topic: outside
 image: a-dark-forest.png
 ---
 

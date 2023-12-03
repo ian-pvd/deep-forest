@@ -90,7 +90,6 @@ const toggleSocialMenu = () => {
 	});
 };
 
-
 /* Initialize Scripts */
 document.addEventListener("DOMContentLoaded", function () {
 	setViewportWidth();

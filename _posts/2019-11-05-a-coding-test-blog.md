@@ -1,7 +1,7 @@
 ---
 title: "A code blog"
 layout: post
-category: code
+topic: code
 ---
 
 Aliquip sint do aute ipsum proident, ut in. Aute ipsum proident ut in quis sit. Proident, ut in quis sit exercitation. Quis sit exercitation exercitation sit, reprehenderit tempor. Exercitation sit reprehenderit tempor tempor ex reprehenderit, enim. Tempor tempor ex reprehenderit. Ex reprehenderit enim lorem. Enim lorem, exercitation veniam excepteur. Veniam excepteur non in et pariatur. Non in et pariatur qui elit exercitation cillum.

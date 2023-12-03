@@ -7,6 +7,7 @@
 	padding: 1rem var(--space-medium);
 	position: relative;
 	z-index: 10;
+	width: var(--viewport-width);
 
 	@media #{$desktop} {
 		align-items: flex-start;
@@ -63,6 +64,7 @@
 .site-header__title {
 	font-size: clamp(var(--fs-xlarge), 4vw, var(--fs-xxlarge));
 	margin: 0 1rem 0 0;
+	letter-spacing: calc(0.033em / 2);
 
 	@media #{$desktop} {
 		display: flex;
@@ -92,6 +94,7 @@
 	height: 100vh;
 	left: 50%;
 	overflow: auto;
+	padding: var(--space-medium);
 	position: absolute;
 	top: var(--size-site-header);
 	transform: translate(-50%, -100%);
@@ -137,6 +140,7 @@
 .site-header__nav-item {
 	border-bottom: var(--border-line);
 	font-size: var(--fs-xlarge);
+	letter-spacing: 0.033em;
 	line-height: 1;
 	margin-bottom: var(--space-small);
 	padding-bottom: var(--space-small);

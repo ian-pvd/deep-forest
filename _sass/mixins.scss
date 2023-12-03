@@ -19,24 +19,39 @@
 	padding: var(--space-large) var(--space-medium);
 	width: 100%;
 
-	@media #{$desktop} {
+	@media #{$tablet} {
 		padding: var(--space-large);
 	}
 }
 
 @mixin full-bleed {
 	background-color: var(--color-black);
-	box-shadow: 0 12px 6px -9px var(--color-black);
+	box-shadow: 0 4px 4px -2px var(--color-black);
 	display: block;
 	height: auto;
 	margin: var(--space-large) calc(-1 * var(--space-large));
 	width: calc(100% + var(--space-xxlarge));
+
+	@media #{$desktop} {
+		box-shadow: 0 12px 6px -9px var(--color-black);
+	}
 }
 
 @mixin content {
 
+	letter-spacing: calc(0.033em / 2);
+
 	& p {
 		margin-bottom: var(--space-medium);
+	}
+
+	& a {
+		font-weight: bold;
+	}
+
+	& em,
+	& strong {
+		letter-spacing: 0.033em;
 	}
 
 	& img,
@@ -67,12 +82,32 @@
 	// Fenced code blocks.
 	& > .highlighter-rouge {
 		box-shadow: 0 0 3px -1px var(--c-text), 0 12px 6px -9px var(--color-black);
-		margin: var(--space-large) calc(-1 * var(--space-medium));
+		margin: var(--space-large) calc(-1 * var(--space-small));
+		overflow: auto;
 		padding: var(--space-medium);
-		width: calc(100% + var(--space-large));
+		width: calc(100% + var(--space-medium));
+
+		@media #{$desktop} {
+			padding: var(--space-medium);
+			margin: var(--space-large) calc(-1 * var(--space-medium));
+			width: calc(100% + var(--space-large));
+		}
 	}
 
 	& > *:last-child {
 		margin-bottom: 0;
 	}
+}
+
+@mixin screen-reader-text {
+	border: 0;
+	clip-path: inset(50%);
+	clip: rect(1px, 1px, 1px, 1px);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+	word-wrap: normal !important;
 }

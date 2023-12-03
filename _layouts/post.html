@@ -16,8 +16,8 @@ layout: default
 		</h1>
 		<div class="article__meta">
 			<span class="article__date" aria-label="Post Date">{{ page.date | date: "%h %e, %Y" }}</span>
-			{%- if page.category -%}
-			<span class="article__category" aria-label="Post Date">{{ page.category }}</span>
+			{%- if page.topic -%}
+			<span class="article__topic" aria-label="Post Date">{{ page.topic }}</span>
 			{%- endif -%}
 		</div>
 	</header>
@@ -34,8 +34,9 @@ layout: default
 			{% assign pageUrl = page.url | absolute_url %}
 			{% assign tweetText = "@" | append: twitterHandle %}
 
-			<a class="article__home-link" rel="home" href="{{ "/" | relative_url }}">Home</a>
-			<a class="article__reply-link"
+			<a class="article__footer-link" rel="home" href="{{ "/" | relative_url }}">Home</a>
+			<a class="article__footer-link" rel="home" href="{{ "/posts/" | relative_url }}">Posts</a>
+			<a class="article__footer-link"
 				href="http://twitter.com/share?text={{ tweetText | cgi_escape }}&url={{ pageUrl }}" target="_blank"
 				rel="noopener nofollow">Reply</a>
 		</nav>

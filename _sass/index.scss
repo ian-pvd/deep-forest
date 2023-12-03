@@ -4,8 +4,9 @@
 @import "mixins";
 
 /* Utilities */
-@import "base";
 @import "accessibility";
+@import "animations";
+@import "base";
 
 /* Layouts & Includes */
 @import "includes/post-item";
@@ -17,3 +18,4 @@
 @import "layouts/home";
 @import "layouts/page";
 @import "layouts/post";
+@import "layouts/posts";
