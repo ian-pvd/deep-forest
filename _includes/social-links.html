@@ -1,7 +1,7 @@
 <div class="social-links">
 
 	<button class="social-links__toggle" id="social-links-toggle" aria-controls="social-links-menu" aria-expanded="true">
-		<img class="social-links__avatar" alt="Profile Picture" src="https://nypost.com/wp-content/uploads/sites/2/2013/08/msdbehiec009103012-300x300.jpg" />
+		<img class="social-links__avatar" alt="Profile Picture" src="{{ site.avatar_url | default: '/assets/avatar.png' | relative_url }}" />
 	</button>
 
 	<ul class="social-links__menu" id="social-links-menu">

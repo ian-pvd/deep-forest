@@ -3,7 +3,8 @@
 	color: var(--c-background);
 	cursor: pointer;
 	display: inline-block;
-	padding: var(--space-xsmall) var(--space-medium);
+	padding: var(--space-xsmall) 1.125rem;
+	text-align: center;
 	transition-property: background-color, color;
 
 	&:focus,
