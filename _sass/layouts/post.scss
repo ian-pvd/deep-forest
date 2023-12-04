@@ -52,34 +52,19 @@
 	border-radius: 0.25em;
 	display: inline-block;
 	font-size: 0.75em;
+	font-weight: bold;
 	line-height: 1;
 	margin-right: 0;
 	padding: 0.575em 0.75em 0.45em;
 	text-transform: uppercase;
+	white-space: nowrap;
 }
 
 .article__content {
 	@include content;
-	border-bottom: var(--border-layout);
-	margin-bottom: var(--space-large);
-	padding-bottom: var(--space-large);
+	@include end-of-page;
 }
 
 .article__footer-links {
-	align-items: center;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: flex-start;
-}
-
-.article__footer-link {
-	@include button;
-	letter-spacing: calc(0.033em / 2);
-	margin-bottom: var(--space-small);
-	margin-right: var(--space-small);
-	white-space: nowrap;
-
-	@media #{$desktop} {
-		margin-right: var(--space-medium);
-	}
+	@include footer-links;
 }

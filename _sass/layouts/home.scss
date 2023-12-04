@@ -31,7 +31,7 @@
 	text-wrap: balance;
 
 	&::after {
-		animation: blink 1s infinite;
+		animation: blink 1000ms infinite;
 		content: "_";
 		display: inline-block;
 		font-size: 0.8em;
@@ -52,9 +52,7 @@
 }
 
 .home__posts {
-	border-bottom: var(--border-layout);
-	margin-bottom: var(--space-large);
-	padding-top: var(--space-large);
+	@include end-of-page;
 }
 
 .home__posts-title {
@@ -67,7 +65,7 @@
 .home__post-list {
 	list-style: none;
 	margin: 0;
-	padding: 0 0 var(--space-large);
+	padding: 0;
 }
 
 .home__post-item {
@@ -79,20 +77,5 @@
 }
 
 .home__footer-links {
-	align-items: center;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: flex-start;
-}
-
-.home__footer-link {
-	@include button;
-	margin-right: var(--space-small);
-	margin-bottom: var(--space-small);
-	white-space: nowrap;
-	letter-spacing: 0.033em;
-
-	@media #{$desktop} {
-		margin-right: var(--space-medium);
-	}
+	@include footer-links;
 }

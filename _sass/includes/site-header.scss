@@ -6,8 +6,8 @@
 	height: var(--size-site-header);
 	padding: 1rem var(--space-medium);
 	position: relative;
-	z-index: 10;
 	width: var(--viewport-width);
+	z-index: 10;
 
 	@media #{$desktop} {
 		align-items: flex-start;
@@ -98,7 +98,7 @@
 	position: absolute;
 	top: var(--size-site-header);
 	transform: translate(-50%, -100%);
-	transition: transform 0.25s ease-in-out;
+	transition: transform 250ms ease-in-out;
 	width: var(--viewport-width);
 	z-index: -1;
 

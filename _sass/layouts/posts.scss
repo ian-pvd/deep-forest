@@ -5,6 +5,10 @@
 	padding-bottom: var(--space-medium);
 }
 
+.blog__posts {
+	@include end-of-page;
+}
+
 .blog__posts-title {
 	@include screen-reader-text;
 }
@@ -12,7 +16,7 @@
 .blog__post-list {
 	list-style: none;
 	margin: 0;
-	padding: 0 0 var(--space-large);
+	padding: 0;
 }
 
 .blog__post-item {

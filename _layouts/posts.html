@@ -4,9 +4,9 @@ layout: default
 
 <div class="blog">
 
-  <h1 class="blog__title">{{ page.title | escape }}</h1>
+	<h1 class="blog__title">{{ page.title | escape }}</h1>
 
-  <section class="blog__posts" id="blog-posts">
+	<section class="blog__posts" id="blog-posts">
 		<h2 class="blog__posts-title">Posts</h2>
 
 		{% assign posts = site.posts %}
@@ -27,4 +27,9 @@ layout: default
 
 	</section>
 
+	<footer class="article__footer">
+		<nav class="article__footer-links">
+			<a class="article__footer-link" rel="home" href="{{ "/" | relative_url }}">Home</a>
+		</nav>
+	</footer>
 </div>

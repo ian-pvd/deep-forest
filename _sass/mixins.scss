@@ -1,9 +1,10 @@
 @mixin button {
 	background-color: var(--c-link);
 	color: var(--c-background);
+	cursor: pointer;
 	display: inline-block;
 	padding: var(--space-xsmall) var(--space-medium);
-	cursor: pointer;
+	transition-property: background-color, color;
 
 	&:focus,
 	&:hover {
@@ -57,8 +58,8 @@
 	& img,
 	& iframe {
 		@include full-bleed;
-		width: 100%;
 		margin: var(--space-medium) auto;
+		width: 100%;
 
 		@media #{$desktop} {
 			margin: var(--space-large) calc(-1 * var(--space-large));
@@ -110,4 +111,32 @@
 	position: absolute;
 	width: 1px;
 	word-wrap: normal !important;
+}
+
+@mixin footer-links {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	margin-bottom: calc(-1 * var(--space-small));
+
+	& > a {
+		@include button();
+		font-size: var(--fs-small);
+		font-weight: bold;
+		letter-spacing: 0.033em;
+		margin: 0 var(--space-small) var(--space-small) 0;
+		min-width: 6.75rem;
+		text-transform: uppercase;
+		white-space: nowrap;
+
+		@media #{$desktop} {
+			margin-right: var(--space-medium);
+		}
+	}
+}
+
+@mixin end-of-page {
+	border-bottom: var(--border-layout);
+	margin-bottom: var(--space-large);
+	padding-bottom: var(--space-large);
 }
